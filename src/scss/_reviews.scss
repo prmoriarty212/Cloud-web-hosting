@@ -1,0 +1,113 @@
+// .section {
+
+//     // .section__reviews
+
+//     &__reviews {
+//     }
+// }
+// .container {
+// }
+.reviews {
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    // .reviews__title
+
+    &__title {
+        text-align: center;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 46px;
+        /* identical to box height */
+        color: $primaryBlue;
+        padding-bottom: 60px;
+    }
+}
+.swiper {
+
+}
+.swiper-wrapper {
+    padding: 30px;
+}
+.swiper-slide {
+
+    min-width: 407px;
+    min-height: 263px;
+    text-align: center;
+    background: #F6F6F6;
+    padding: 40px 50px;
+    transition: 0.2s;
+    border-radius: 25px;
+
+    &:hover {        
+        background-color: #A9D2FF;
+        transform: scale(1.1);
+    }
+}
+
+.slide-content {
+    text-align: center;
+
+    // .slide-content__text
+    &__text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        /* Primary */
+        color: $primaryBlue;
+        opacity: 0.5;
+        padding-bottom: 30px;
+    }
+
+    // .slide-content__name
+
+    &__name {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        /* identical to box height */
+        color: $primaryBlue;
+        padding-bottom: 8px;
+    }
+
+    // .slide-content__location
+
+    &__location {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+        text-align: center;
+        /* Primary */
+        color: $primaryBlue;
+        opacity: 0.5;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 20px !important;
+    border-radius: 10% !important;
+    background: $primarySky !important;
+}
+
+
+.swiper-pagination-bullet-active {
+    width: 40px !important;
+    color: #fff;
+    background: #007aff;
+}
+// .swiper-button-prev {
+// }
+// .swiper-button-next {
+// }
+// .swiper-scrollbar {
+// }

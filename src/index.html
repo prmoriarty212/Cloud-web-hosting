@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud&Web Hosting</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core">
+
+</head>
+
+<body class="main__body">
+    <!-- Additional class .wrapper-blur for blur background while popup active -->
+    <div class="wrapper-blur" id="overlay">
+    <!-- Header -->
+    @@include('./html/_header.html')
+
+    <!-- Main Page -->
+    <main>
+        <!-- Hero -->
+        @@include('./html/_hero.html')
+
+        <!-- Domain Search -->
+        @@include('./html/_domain.html')
+
+        <!-- Our Services -->
+        @@include('./html/_services.html')
+
+        <!-- Review Slider -->
+        @@include('./html/_reviews.html')
+        
+        <!-- Numbers -->
+        @@include('./html/_numbers.html')
+        
+        <!-- Numbers -->
+        @@include('./html/_plans.html')
+        
+    </main>
+    </div>
+    <!-- Footer -->
+    @@include('./html/_footer.html')
+
+    <!-- Auto Popup after 2 seconds of load page-->
+    @@include('./html/_popup.html')
+
+</body>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>

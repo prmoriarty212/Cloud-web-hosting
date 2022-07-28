@@ -1,0 +1,133 @@
+.section {
+
+    // .section__plans
+
+    &__plans {
+    }
+}
+.container {
+}
+.plans {
+    
+
+    // .plans__content
+
+    &__content {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        @media (max-width: $breakpoint768) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    // .plans__title
+
+    &__title {
+        text-align: center;
+        padding-bottom: 60px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 46px;
+        /* identical to box height */
+        color: $primaryBlue;
+        padding-bottom: 20px;
+    }
+
+    // .plans__plates
+
+    &__plates {
+        display: flex;
+        justify-content: space-around;
+
+        @media (max-width: $breakpoint768) {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+
+
+
+.plate {
+    text-align: center;
+    width: 318px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: auto;
+    padding-right: auto;
+    border-radius: 25px;
+
+    @media (max-width: $breakpoint768) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    
+
+    &:hover {
+        background-color: $primaryGrey;
+        transition: 0.3s all ease-out;
+         * {
+            opacity: 1;
+            color: $primaryBlue;
+        }      
+        
+    }
+		// .plate__table
+	&__table {
+        padding-top: 40px;
+        @media (max-width: $breakpoint768) {
+            padding-top: 20px;
+        }
+    }
+
+		// .plate__cell
+	&__cell {      
+        padding-top: 10px;
+        padding-bottom: 10px;  
+        border-bottom: 1px solid #F6F6F6;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+        /* Primary */
+        color: $primaryBlue;
+        opacity: 0.5;        
+	}
+
+
+
+    // .plate__period
+
+    &__period {
+        padding-bottom: 16px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: $primarySky;
+    }    
+
+    // .plate__price
+    &__price {
+        
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37px;
+        /* identical to box height */
+        text-align: center;
+        /* Primary */
+        color: $primaryBlue;
+    }
+
+}

@@ -1,0 +1,66 @@
+.section {
+
+    // .section__numbers
+
+    &__numbers {
+    }
+}
+.container {
+}
+.container-blue {
+    background-color: $primarySky;
+}
+.numbers {
+    
+
+    // .numbers__row
+
+    &__row {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        @media (max-width: $breakpoint768) {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+}
+.number {
+
+    // .number__column
+
+    &__column {
+        text-align: center;
+    }
+}
+.column {
+
+    // .column__title
+
+    &__title {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 69px;
+        /* identical to box height */
+        color: #FFFFFF;
+    }
+
+    // .column__text
+
+    &__text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+}

@@ -1,0 +1,158 @@
+.section-domain {
+}
+.container {
+}
+.domain {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 150px;
+      padding-bottom: 150px;
+      align-items: center;
+
+      @media (max-width: $breakpoint992) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 25px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+      }
+
+		// .domain__search
+
+		&__search {
+                  width: 50%;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 36px;
+                  border-right: 1px solid rgba(3, 4, 94, 0.1);
+                  @media (max-width: $breakpoint992) {
+                        border: none;
+                  }
+                  
+
+                  span {
+                        font-family: 'Ubuntu';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 37px;
+                        /* identical to box height */
+                        /* Primary */
+                        color: #03045E;
+                        @media (max-width: $breakpoint480) {
+                              font-size: 26px;
+                              line-height: 120%;
+                        }
+                  }
+		}
+
+		// .domain__search-field
+
+		&__search-field {
+                  @media (max-width: $breakpoint992) {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                  }
+		}
+
+		// .domain__input
+
+		&__input {
+                  max-width: 466px;
+                  padding-top: 18px;
+                  padding-bottom: 18px;
+                  padding-left: 20px;
+                  padding-right: 150px;
+                  background: #F6F6F6;
+                  border-radius: 5px 0px 0px 5px;
+                  @media (max-width: $breakpoint992) {
+                        border-radius: 5px;
+                        padding-right: 0px;
+                        padding-left: 15px;
+                  }
+
+                  
+                  &::placeholder {
+                        color: $primaryBlue  ;
+                        opacity: 0.5;
+                        @media (max-width: $breakpoint992) {
+                              padding: 18 auto;
+                              text-align: center;
+                        }
+                  }
+
+                  &:focus {
+                        outline: none;
+                        color: $primaryBlue;
+                  }
+		}
+
+		// .domain__search-button
+
+		&__search-button {
+                  padding: 18px 38px;
+                  color: white;
+                  background-color: $primarySky;
+                  border-radius: 0px 5px 5px 0px;
+
+                  &:hover {
+                        background-color: rgb(0, 4, 255);                        
+                  }
+
+                  @media (max-width: $breakpoint992) {
+                        border-radius: 5px;
+                  }
+
+		}
+
+		// .domain__prices
+
+		&__prices {
+                  columns: 3;
+                  -webkit-columns: 3;
+                  -moz-columns: 3;
+                  flex-wrap: wrap;
+                  margin: 0 auto;                 
+		}
+
+		// .domain__prices-plate
+
+		&__prices-plate {
+                  width: 100px;
+
+                  &:hover {
+                        transition: 0.3s;
+                        transform: scale(1.1);                        
+                  }
+
+                  @media (max-width: $breakpoint992) {                        
+                        width: 80px;
+                  }
+		}
+
+            &__prices-plate:nth-child(odd) {
+                  padding-bottom: 32px;
+            }
+}
+.title-name {
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      /* identical to box height */
+      color: $primarySky;
+}
+.title-price {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      /* identical to box height */
+      /* Primary */
+      color: #03045E;
+      opacity: 0.3;      
+}
